@@ -33,8 +33,8 @@ elif userChoice == "exit":
 
 
 #systemChoice
-systemChoiceList = ["rock", "paper", "scissors"]
-systemChoice = random.choice(systemChoiceList)
+systemChoicesList = ["rock", "paper", "scissors"]
+systemChoice = random.choice(systemChoicesList)
 
 #Result check
 resultWin = (userChoice == "rock" and systemChoice == "scissors") or (userChoice == "scissors" and systemChoice == "paper") or (userChoice == "paper" and systemChoice == "rock")
