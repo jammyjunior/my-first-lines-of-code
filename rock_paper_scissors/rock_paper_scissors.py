@@ -9,7 +9,7 @@ print("Type 'r' for rock, 'p' for paper, 's' for scissors or 'exit' to exit the 
 userChoice = input("Your choice: ").lower()
 
 # Check if the program cann't be run. userChoice not in acceptAnswer 
-userAnswerAccepted = ["rock", "r", "paper", "p", "exit"]
+userAnswerAccepted = ["rock", "r", "paper", "p", "s", "scissors" "exit"]
 while userChoice not in userAnswerAccepted:
     print("Sorry, I can't get it. Try again!")
     print("Type 'r' for rock, 'p' for paper, 's' for scissors or 'exit' to exit the program")
