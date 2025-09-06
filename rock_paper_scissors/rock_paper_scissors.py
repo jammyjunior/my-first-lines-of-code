@@ -28,8 +28,8 @@ elif userChoice == "s":
     userChoice = "scissors"
 
 #systemChoice
-systemList = ["rock", "paper", "scissors"]
-systemChoice = random.choice(systemList)
+systemChoiceList = ["rock", "paper", "scissors"]
+systemChoice = random.choice(systemChoiceList)
 
 #Result check
 resultWin = (userChoice == "rock" and systemChoice == "scissors") or (userChoice == "scissors" and systemChoice == "paper") or (userChoice == "paper" and systemChoice == "rock")
