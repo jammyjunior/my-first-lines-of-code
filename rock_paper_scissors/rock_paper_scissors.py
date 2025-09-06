@@ -17,7 +17,7 @@ while userChoice not in userAnswerAccepted:
     userChoice = input("Your choice: ").lower()
 
 # If userChoise in acceptAnswer
-# Convert userChoice
+# Convert userChoice, exit the program if userChoise == "exit"
 if userChoice == "r":
     userChoice = "rock"
 
@@ -26,6 +26,11 @@ elif userChoice == "p":
 
 elif userChoice == "s":
     userChoice = "scissors"
+
+elif userChoice == "exit":
+    print("Exiting...")
+    sys.exit(0)
+
 
 #systemChoice
 systemChoiceList = ["rock", "paper", "scissors"]
@@ -39,24 +44,23 @@ resultTie = userChoice == systemChoice
 # Print the result
 print()
 if resultWin == True:
-    print("Your chose:", userChoice)
+    print("You chose:", userChoice)
     print("System chose:", systemChoice)
     print()
     print("You won!")
 
 elif resultLoss == True:
-    print("Your chose:", userChoice)
+    print("You chose:", userChoice)
     print("System chose:", systemChoice)
     print()
     print("You lose.")
 
 elif resultTie == True:
-    print("Your chose:", userChoice)
+    print("You chose:", userChoice)
     print("System chose:", systemChoice)
     print()
     print("It's a tie!")
 
-elif userChoice == "exit":
-    print("Exiting...")
-    sys.exit(0)
+else:
+    print("Unknown Error!")
 
