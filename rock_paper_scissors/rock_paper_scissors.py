@@ -6,7 +6,7 @@ print("Rock Paper Scissors Game")
 print("------------------------")
 print("Welcome to Rock Paper Scissors Game!")
 print("Type 'r' for rock, 'p' for paper, 's' for scissors or 'exit' to exit the program")
-userChoice = input("Your choice: ")
+userChoice = input("Your choice: ").lower()
 
 # Check if the program cann't be run. userChoice not in acceptAnswer 
 userAnswerAccepted = ["rock", "r", "paper", "p", "exit"]
@@ -14,7 +14,7 @@ while userChoice not in userAnswerAccepted:
     print("Sorry, I can't get it. Try again!")
     print("Type 'r' for rock, 'p' for paper, 's' for scissors or 'exit' to exit the program")
     print()
-    userChoice = input("Your choice: ")
+    userChoice = input("Your choice: ").lower()
 
 # If userChoise in acceptAnswer
 # Convert userChoice
