@@ -43,22 +43,16 @@ resultTie = userChoice == systemChoice
 
 # Print the result
 print()
+print("You chose:", userChoice)
+print("System chose:", systemChoice)
+print()
 if resultWin == True:
-    print("You chose:", userChoice)
-    print("System chose:", systemChoice)
-    print()
     print("You won!")
 
 elif resultLoss == True:
-    print("You chose:", userChoice)
-    print("System chose:", systemChoice)
-    print()
     print("You lose.")
 
 elif resultTie == True:
-    print("You chose:", userChoice)
-    print("System chose:", systemChoice)
-    print()
     print("It's a tie!")
 
 else:
